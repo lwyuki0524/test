@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YUKI</title>
     <link rel="stylesheet" href="css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -19,18 +21,35 @@
         
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="nav-btn active" data-row-id="row1">Home</li>
+            <li class="nav-btn" data-row-id="row2">About</li>
+            <li class="nav-btn" data-row-id="row3">Blog</li>
+            <li class="nav-btn" data-row-id="row4">Contact</li>
+            <li class="nav-btn" data-row-id="row5">Contact</li>
+            <li class="nav-btn" data-row-id="row6">Contact</li>
           </ul>
         </nav>
     </header>
     <div class="content">
-    <h2>Your content would go here</h2>
+        <div id="content-wrap" style="margin-top: 50px;">    
+            <h1>Easy One Page Scroll</h1>
+            <h2>A Pen by <a href="http://www.andrecortellini.com" target="_blank"><span>André Cortellini</span></a></h2>
+            
+            <div class="row row-nav" data-height="100" id="row1">Row#1 <div class="row-btn"><div class="circle"></div></div></div>
+            <div class="row row-nav" data-height="200" id="row2">Row#2 <div class="row-btn"><div class="circle"></div></div></div>
+            <div class="row row-nav" data-height="280" id="row3">Row#3 <div class="row-btn"><div class="circle"></div></div></div>
+            <div class="row" data-height="180"><span>*Row Skip</span> <div class="row-btn"><div class="circle"></div></div></div>
+            <div class="row row-nav" data-height="400" id="row4">Row#4 <div class="row-btn"><div class="circle"></div></div></div>
+            <div class="row row-nav" data-height="50" id="row5">Row#5 <div class="row-btn"><div class="circle"></div></div></div>
+            <div class="row row-nav" data-height="300" id="row6">Row#6 <div class="row-btn"><div class="circle"></div></div></div>
+            
+            <div id="top">Top</div>
+        </div>
     </div>
+
 </body>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script src="js/index.js"></script>
+<script src="js/page2.js"></script>
 </html>
